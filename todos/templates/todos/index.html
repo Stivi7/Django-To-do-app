@@ -1,0 +1,10 @@
+{% include 'partials/header.html'%}
+        <ul>
+            {% for obj in todos %}
+                <li>
+                        <a href="/todos/details/{{obj.id}}">{{obj.title}}</a>: {{obj.text}}
+                </li>
+            {% endfor %}
+        </ul>
+  
+{% include 'partials/footer.html'%}
